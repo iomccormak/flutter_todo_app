@@ -1,7 +1,7 @@
 class Task {
   int _id = 0;
   String _title = '';
-  String _description = '';
+  //String _description = '';
 
   int _counter = 0;
 
@@ -9,10 +9,10 @@ class Task {
     this._id = _counter++;
   }
 
-  Task.name(String t, String d) {
+  Task.name(String t) {
     this._id = _counter++;
     this._title = t;
-    this._description = d;
+    //this._description = d;
   }
 
   int getId() {
@@ -27,11 +27,11 @@ class Task {
     return _title;
   }
 
-  void setDescription(String s) {
+  /*void setDescription(String s) {
     _description = s;
   }
 
   String getDescription() {
     return _description;
-  }
+  }*/
 }
